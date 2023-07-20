@@ -1,0 +1,63 @@
+.quem-somos__Container {
+    text-align: center;
+    padding: 5rem;
+}
+
+.quem-somos__titulo {
+    margin-bottom: 1rem;
+    color: #8d0606;
+    font-size: 3.1875rem;
+    font-family: var(--Pacifico);
+}
+
+.quem-somos__descricao {
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: var(--cinza-claro);
+}
+
+/* stilização de Pessoas */
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+}
+
+.pessoa__nome {
+    margin: 1rem 0;
+    font-family: var(--Pacifico);
+    color: #8d0606;
+    font-size: 2rem;
+}
+
+.pessoa__funcao {
+    text-transform: lowercase;
+    color: var(--cinza-claro);
+    font-size: 1.25rem;
+}
+
+.pessoas {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+}
+
+/*Aplicação da Imagen da Pessoa*/
+
+.pessoa__imagem {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-repeat: no-repeat;
+    /*Imagem não deve Repitir*/
+    background-size: cover;
+    /*Deve ocupar tudo*/
+    background-position: center;
+    /*Centralizar a Imagen no centro*/
+    border-radius: 100%;
+    /*Deixa a imagen redonda*/
+}
+
+.pessoa__imagem--rangel {
+    background-image: url('../img/pessoas/rangel-imagen.png');
+}

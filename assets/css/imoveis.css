@@ -1,0 +1,49 @@
+.imovei__Contanier {
+    background: var(--cinza-medio);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+}
+
+.imoveis {
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(25% - 5rem);
+}
+
+.imoveis__imagem {
+    height: 200px;
+    width: 100%;
+}
+
+.imoveis__conteudo {
+    padding: 1rem;
+}
+
+.imoveis__titulo {
+    font-size: 1.4365rem;
+}
+
+.imoveis__descricao {
+    font-size: 1.1865rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.imoveis__botao {
+    align-items: center;
+    background: var(--dourado-forte);
+    border: none;
+    border-radius: 5px;
+    color: var(--branco);
+    padding: 1rem;
+    transition: all .1s ease-in-out;
+}
+
+.imoveis__botao:hover {
+    cursor: pointer;
+    background: var(--dourado);
+}

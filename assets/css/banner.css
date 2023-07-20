@@ -1,0 +1,37 @@
+.banner__Container {
+    position: relative;
+}
+
+.banner__img {
+    height: calc(100vh - 72px);
+    width: 100%;
+}
+
+.banner__titulo {
+    color: var(--branco);
+    font-family: var(--Pacifico);
+    font-size: 5.0625rem;
+    position: absolute;
+    text-shadow: 0 4px 4px rgb(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50, -50);
+    width: 100%;
+}
+
+.banner__sobre {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.banner__sobre-titulo {
+    color: var(--vermelho-forte);
+    font-family: var(--Pacifico);
+    font-size: 2.1875rem;
+}
+
+.banner__sobre-descricao {
+    color: var(--cinza-claro);
+    font-size: 1.75rem;
+    font-weight: 100;
+}

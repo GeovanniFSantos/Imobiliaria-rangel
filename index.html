@@ -6,7 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Imobiliaria</title>
+    <link rel="icon" href="./assets/img/Logo-RG2.png">
+    <title>Imobiliaria Rangel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/cabecalho.css">
@@ -14,12 +16,14 @@
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/imoveis.css">
     <link rel="stylesheet" href="./assets/css/quemsomos.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
 
 </head>
 
 <body>
     <header class="cabecalho__Container">
         <img class="cabecalho__logo" src="./assets/img/Logo-RG1.png" width="158" height="85">
+        <a href="#" class="fa fa-navicon"></a>
         <nav class="cabecalho__navegacao">
             <ul class="cabecalho__lista">
                 <li class="cabecalho__item"> <a class="cabecalho__link" href="">Início</a></li>
@@ -31,12 +35,12 @@
     </header>
 
     <section class="banner__Container">
-        <img class="banner__img" src="./assets/img/banner2.jpeg" width="1282" height="445">
-        <h2 class="banner__titulo">Aproveite os melhores Apartamentos!</h2>
+        <img class="banner__img">
+        <h2 class="banner__titulo">Confira nossos Apartamentos!</h2>
     </section>
     <section class="banner__sobre">
-        <h2 class="banner__sobre-titulo">Ache os melhor apartamento com as melhores localidade para você!</h2>
-        <p class="banner__sobre-descricao">Ap com localidade e segurança, facilite sua locação de seu Apartamento!</p>
+        <h2 class="banner__sobre-titulo">Ache os melhor apartamento com a melhores localidade para você!</h2>
+        <p class="banner__sobre-descricao">Ap com localidade e segurança, facilite a locação de seu Apartamento!</p>
     </section>
 
     <section class="imovei__Contanier">
@@ -133,6 +137,16 @@
             </div>
         </div>
     </section>
+
+    <footer class="rodape">
+        Contato: rangel@email.com
+    </footer>
+
+    <script>
+        document.getElementsByClassName("fa")[3].addEventListener("click", function () {
+            document.getElementsByClassName("cabecalho__navegacao")[0].classList.toggle("cabecalho__lista");
+        });
+    </script>
 </body>
 
 </html>

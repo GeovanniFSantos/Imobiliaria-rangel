@@ -3,7 +3,7 @@
 }
 
 .banner__img {
-    height: calc(100vh - 72px);
+    background: url("../img/banner1.jpeg") no-repeat center / cover;
     width: 100%;
 }
 
@@ -13,7 +13,7 @@
     font-size: 5.0625rem;
     position: absolute;
     text-shadow: 0 4px 4px rgb(0, 0, 0, 0.75);
-    top: 50%;
+    top: 40%;
     text-align: center;
     transform: translate(-50, -50);
     width: 100%;
@@ -21,17 +21,62 @@
 
 .banner__sobre {
     text-align: center;
-    padding: 2.5rem;
 }
 
 .banner__sobre-titulo {
     color: var(--vermelho-forte);
     font-family: var(--Pacifico);
-    font-size: 2.1875rem;
 }
 
 .banner__sobre-descricao {
     color: var(--cinza-claro);
-    font-size: 1.75rem;
     font-weight: 100;
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 0) {
+    .banner__img {
+        height: calc(100vh - 51px);
+    }
+
+    .banner__titulo {
+        font-size: 3.5005rem;
+    }
+
+    .banner__sobre {
+        padding: 2rem 1rem;
+    }
+
+    .banner__sobre-titulo {
+        font-size: 2rem;
+    }
+
+    .banner__sobre-descricao {
+        font-size: 1.3rem;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .banner__img {
+        height: calc(100vh - 72px);
+    }
+
+    .banner__titulo {
+        font-size: 5.0625rem;
+    }
+
+    .banner__sobre {
+        padding: 2.5rem;
+    }
+
+    .banner__sobre-titulo {
+        font-size: 3.1875rem;
+    }
+
+    .banner__sobre-descricao {
+        font-size: 1.75rem;
+    }
 }

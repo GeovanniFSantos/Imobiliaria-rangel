@@ -2,7 +2,6 @@
     background: var(--cinza-medio);
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 5rem;
 }
 
 .imoveis {
@@ -10,8 +9,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-    margin-right: 5rem;
-    width: calc(25% - 5rem);
 }
 
 .imoveis__imagem {
@@ -46,4 +43,42 @@
 .imoveis__botao:hover {
     cursor: pointer;
     background: var(--dourado);
+}
+
+
+
+/*Responsividade*/
+
+@media screen and (min-width: 0) {
+    .imovei__Contanier {
+        padding: 5rem 0 0 1rem;
+    }
+
+    .imoveis {
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imovei__Contanier {
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .imoveis {
+        margin-right: 2.5rem;
+        width: calc(33% - 2.5rem);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imovei__Contanier {
+        padding: 5rem 0 0 5rem;
+
+    }
+
+    .imoveis {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
 }

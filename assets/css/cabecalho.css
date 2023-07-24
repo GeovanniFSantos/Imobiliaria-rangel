@@ -51,9 +51,12 @@
         color: var(--bg-chamada-mobile);
         text-decoration: none;
         font-size: 30px;
-        padding: 10px;
         transition: 0.5s;
         cursor: pointer;
+    }
+
+    .showmylinks {
+        display: block;
     }
 }
 
